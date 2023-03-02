@@ -6,11 +6,6 @@ module.exports = {
       primary: 'Nunito',
       secondary: 'sans-serif',
     },
-    container: {
-      padding: {
-        DEFAULT: '15px',
-      },
-    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -18,15 +13,8 @@ module.exports = {
       xl: '1140px',
     },
     extend: {
-      colors: {
-        primary: '#0a0a0a',
-        accent: {
-          DEFAULT: '#a37d4c',
-          hover: '#967142',
-        },
-      },
       backgroundImage: {
-        room: "url('./assets/img/room.jpg')",
+        blurImg: "url('./src/assets/img/bg.jpeg')",
       },
     },
   },

@@ -11,7 +11,23 @@
   }
 
   body {
-    @apply font-primary text-primary;
+    @apply font-primary;
   }
 
+}
+
+@layer utilities {
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+
+    /* Firefox */
+    scrollbar-width: none;
+  }
 }
