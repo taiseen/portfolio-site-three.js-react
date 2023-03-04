@@ -14,8 +14,16 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        blurImg: "url('./src/assets/img/bg.jpeg')",
+        blurImg: "url('/src/assets/img/bg.jpeg')",
       },
+      animation: {
+        'customAni': 'slowSpring 3s infinite ease alternate',
+      },
+      keyframes: {
+        slowSpring: {
+          'to': { transform: ' translateY(30px)' },
+        }
+      }
     },
   },
   plugins: [],

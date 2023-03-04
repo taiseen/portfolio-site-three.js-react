@@ -14,6 +14,9 @@
     @apply font-primary;
   }
 
+  .btn{
+    @apply bg-pink-500 text-white font-medium w-28 p-2 rounded-md cursor-pointer;
+  }
 }
 
 @layer utilities {
