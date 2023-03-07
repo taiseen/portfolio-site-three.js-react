@@ -4,7 +4,7 @@ import images from '../../assets'
 const Hero = () => {
 
   return (
-    <div className='h-screen snap-center flex flex-col items-center justify-between'>
+    <section className='h-screen snap-center flex flex-col items-center justify-between'>
 
       <Navbar />
 
@@ -19,7 +19,9 @@ const Hero = () => {
             <h2 className='text-pink-500 text-3xl'>What we do...</h2>
           </div>
 
-          <p className='text-2xl text-gray-300'>we enjoy create delightful, human-centered digital experiences.</p>
+          <p className='text-2xl text-gray-300'>
+            we enjoy create delightful, human-centered digital experiences.
+          </p>
 
           <button className='btn'>Learn More</button>
         </div>
@@ -27,11 +29,15 @@ const Hero = () => {
         {/* Right Side */}
         <div className='flex-3 relative w-[600px] h-[600px]'>
           <div></div>
-          <img src={images.moon} alt="" className='object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-customAni' />
+          <img
+            alt=""
+            src={images.moon}
+            className='object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-customAni'
+          />
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -2,9 +2,11 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='snap-center h-screen'>
-      Contact
-    </div>
+    <section className='snap-center h-screen'>
+
+        <div className="container"></div>
+
+    </section>
   )
 }
 

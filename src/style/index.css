@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +16,14 @@
 
   .btn{
     @apply bg-pink-500 text-white font-medium w-28 p-2 rounded-md cursor-pointer;
+  }
+
+  .textOutline {
+    -webkit-text-stroke: 1px white;
+  }
+
+  .dynamicText::after {
+    content: attr(data-content);
   }
 }
 

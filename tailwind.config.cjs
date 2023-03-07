@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Nunito',
+      primary: 'Poppins',
       secondary: 'sans-serif',
     },
     screens: {
@@ -17,12 +17,16 @@ module.exports = {
         blurImg: "url('/src/assets/img/bg.jpeg')",
       },
       animation: {
-        'customAni': 'slowSpring 3s infinite ease alternate',
+        'customAni': 'slowSpring 2s infinite ease alternate',
+        'textHover': 'moveText .5s linear both',
       },
       keyframes: {
         slowSpring: {
-          'to': { transform: ' translateY(30px)' },
-        }
+          'to': { transform: 'translateY(40px)' },
+        },
+        moveText: {
+          'to': { width: '100%' },
+        },
       }
     },
   },
