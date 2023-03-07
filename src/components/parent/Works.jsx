@@ -4,7 +4,7 @@ const Works = () => {
   return (
     <section className='snap-center h-screen flex justify-center'>
 
-      <div className="container w-[1400px] mx-auto flex justify-between">
+      <div className="w-[1400px] flex justify-between">
 
         {/* Left Side */}
         <div className="flex-1 flex items-center">
@@ -13,17 +13,18 @@ const Works = () => {
               data.map(item =>
                 <li
                   key={item}
-                  className={`cursor-pointer font-bold text-transparent relative textOutline
-                  after:content-['{item}']
+                  after={item}
+                  className={`cursor-pointer font-bold text-transparent relative textOutline w-fit
+                  after:content-[attr(after)]
                   after:absolute
+                  after:w-0
                   after:top-0
                   after:left-0
                 after:text-red-300
-                  after:w-0
-                  after:whitespace-nowrap
                   after:overflow-hidden
+                  after:whitespace-nowrap
                   hover:after:animate-textHover
-                  `}
+                  hover:after:noTextOutline `}
                 >
 
                   {item}

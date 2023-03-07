@@ -22,9 +22,10 @@
     -webkit-text-stroke: 1px white;
   }
 
-  .dynamicText::after {
-    content: attr(data-content);
+  .noTextOutline {
+    -webkit-text-stroke: 0 white;
   }
+
 }
 
 @layer utilities {
