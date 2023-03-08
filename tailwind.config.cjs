@@ -19,6 +19,7 @@ module.exports = {
       animation: {
         'customAni': 'slowSpring 2s infinite ease alternate',
         'textHover': 'moveText .5s linear both',
+        'mouseScroll': 'mouseScrolling 2s infinite',
       },
       keyframes: {
         slowSpring: {
@@ -26,6 +27,10 @@ module.exports = {
         },
         moveText: {
           'to': { width: '100%' },
+        },
+        mouseScrolling :{
+          'from': { opacity: '1', top: '10px' },
+          'to': { opacity: '0', top: '60px' },
         },
       }
     },

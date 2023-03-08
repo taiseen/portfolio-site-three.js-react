@@ -1,5 +1,3 @@
-import React from 'react'
-
 const FormInputs = ({ register, errors }) => {
 
     return (
@@ -57,7 +55,7 @@ const FormInputs = ({ register, errors }) => {
                     </span>
                 )}
             </div>
-            
+
         </div>
     )
 }

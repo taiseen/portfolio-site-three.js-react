@@ -1,7 +1,9 @@
-import images from '../../assets'
-import { navLinks } from '../../constants/data'
+import { navLinks } from '../../constants/data';
+import images from '../../assets';
+
 
 const Navbar = () => {
+
   return (
     <nav className='flex justify-center'>
       <div className='w-[1400px] flex justify-between items-center py-3 px-0'>

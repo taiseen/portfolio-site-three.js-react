@@ -20,23 +20,23 @@ const Works = () => {
                   after:w-0
                   after:top-0
                   after:left-0
-                after:text-red-300
+                 after:text-red-300
                   after:overflow-hidden
                   after:whitespace-nowrap
                   hover:after:animate-textHover
                   hover:after:noTextOutline `}
                 >
-
                   {item}
-
                 </li>
               )
             }
           </ul>
         </div>
 
+
         {/* Right Side */}
         <div className="flex-1"></div>
+
       </div>
 
     </section>

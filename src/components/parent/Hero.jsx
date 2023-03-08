@@ -1,10 +1,11 @@
-import { Navbar } from '..'
 import images from '../../assets'
+import { MouseScroll, Navbar } from '..'
+
 
 const Hero = () => {
 
   return (
-    <section className='h-screen snap-center flex flex-col items-center justify-between' id='home'>
+    <section className='h-screen snap-center relative flex flex-col items-center justify-between' id='home'>
 
       <Navbar />
 
@@ -26,6 +27,7 @@ const Hero = () => {
           <button className='btn'>Learn More</button>
         </div>
 
+
         {/* Right Side */}
         <div className='flex-3 relative w-[600px] h-[600px]'>
           <div></div>
@@ -37,6 +39,8 @@ const Hero = () => {
         </div>
 
       </div>
+
+      <MouseScroll />
     </section>
   )
 }

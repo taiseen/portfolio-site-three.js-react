@@ -1,5 +1,6 @@
 import images from '../../assets'
 
+
 const Who = () => {
 
   return (
@@ -11,6 +12,7 @@ const Who = () => {
         <div className='flex-1'>
           <div></div>
         </div>
+
 
         {/* Right Side */}
         <div className='flex-1 flex flex-col justify-center gap-5'>

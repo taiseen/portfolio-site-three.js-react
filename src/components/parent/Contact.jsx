@@ -1,8 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
-import { FormInputs } from "..";
+import { FormInputs, Map } from "..";
 import emailjs from "@emailjs/browser";
-import Map from '../children/Map'
 
 
 const Contact = () => {
@@ -49,7 +48,6 @@ const Contact = () => {
 
         {/* Left Side */}
         <div className='flex-1 flex items-center justify-center'>
-
           <form
             className='w-[500px] space-y-4'
             onSubmit={handleSubmit((libData, manualData) => userSubmitClick(libData, manualData))}
@@ -58,10 +56,7 @@ const Contact = () => {
             <h1 className='text-4xl'>Contact Us</h1>
 
             {/* all input elements */}
-            <FormInputs
-              register={register}
-              errors={errors}
-            />
+            <FormInputs register={register} errors={errors} />
 
             <button type="submit" className='btn w-full p-4 text-2xl'>Send</button>
 
@@ -70,14 +65,11 @@ const Contact = () => {
             </p>)}
 
           </form>
-
         </div>
 
 
         {/* Right Side */}
-        <div className='flex-1'>
-          <Map />
-        </div>
+        <div className='flex-1'> <Map /> </div>
 
       </div>
 

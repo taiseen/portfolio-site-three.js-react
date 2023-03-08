@@ -16,6 +16,7 @@
 ## Learning context:
 * No Scrollbar
 * Scroll Snap Effect
+* scrolling mouse animation...
 * at tailwind.config file url img path calling time avoid (.) at start
 * dynamically pass content value at pseudo ::after class at mouse hover effect
 * using of react-map & its use cases...
