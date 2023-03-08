@@ -3,7 +3,7 @@ import images from '../../assets'
 const Who = () => {
 
   return (
-    <section className='h-screen snap-center flex justify-center'>
+    <section className='h-screen snap-center flex justify-center' id='studio'>
 
       <div className='h-screen snap-center w-[1400px] flex justify-between items-center'>
 
@@ -25,7 +25,7 @@ const Who = () => {
             a creative group of designers and developers with a passion for the arts.
           </p>
 
-          <button className='btn w-32'>See our works</button>
+          <button className='btn w-36'>See our works</button>
         </div>
 
       </div>

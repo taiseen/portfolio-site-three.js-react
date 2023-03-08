@@ -4,7 +4,7 @@ import images from '../../assets'
 const Hero = () => {
 
   return (
-    <section className='h-screen snap-center flex flex-col items-center justify-between'>
+    <section className='h-screen snap-center flex flex-col items-center justify-between' id='home'>
 
       <Navbar />
 

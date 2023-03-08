@@ -1,4 +1,5 @@
 import images from '../../assets'
+import { navLinks } from '../../constants/data'
 
 const Navbar = () => {
   return (
@@ -9,16 +10,20 @@ const Navbar = () => {
           <img src={images.logo} alt="logo" className='h-14' />
 
           <ul className='flex gap-5'>
-            <li>Home</li>
-            <li>Studio</li>
-            <li>Woks</li>
-            <li>Contact</li>
+
+            {
+              navLinks.map(({ path, name }) =>
+                <li key={path}>
+                  <a href={path}>{name}</a>
+                </li>
+              )
+            }
           </ul>
         </div>
 
         <div className='flex items-center gap-5'>
-          <img src={images.search} alt="search" className='w-5 cursor-pointer'/>
-          <button className='btn'>Hire Now</button>
+          <img src={images.search} alt="search" className='w-5 cursor-pointer' />
+          <a href='#contact' className='btn text-center'>Hire Now</a>
         </div>
 
       </div>

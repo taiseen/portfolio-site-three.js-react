@@ -18,8 +18,12 @@
     @apply bg-pink-500 text-white font-medium w-28 p-2 rounded-md cursor-pointer;
   }
 
+  .inputStyle{
+    @apply border-0 outline-none p-5 rounded-md bg-[#e8e6e6] text-black text-xl w-full
+  }
+
   .textOutline {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: .5px white;
   }
 
   .noTextOutline {

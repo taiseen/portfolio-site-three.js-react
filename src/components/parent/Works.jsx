@@ -1,8 +1,8 @@
-import data from '../../constants/data'
+import { worksData } from '../../constants/data'
 
 const Works = () => {
   return (
-    <section className='snap-center h-screen flex justify-center'>
+    <section className='snap-center h-screen flex justify-center' id='works'>
 
       <div className="w-[1400px] flex justify-between">
 
@@ -10,12 +10,12 @@ const Works = () => {
         <div className="flex-1 flex items-center">
           <ul className='flex flex-col gap-5 text-[85px]'>
             {
-              data.map(item =>
+              worksData.map(item =>
                 <li
                   key={item}
-                  after={item}
+                  after-dynamic-value={item}
                   className={`cursor-pointer font-bold text-transparent relative textOutline w-fit
-                  after:content-[attr(after)]
+                  after:content-[attr(after-dynamic-value)]
                   after:absolute
                   after:w-0
                   after:top-0
