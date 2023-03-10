@@ -7,3 +7,5 @@ export { default as MouseScroll } from './children/MouseScroll';
 export { default as FormInputs } from './children/FormInputs';
 export { default as Navbar } from './children/Navbar';
 export { default as Map } from './children/Map';
+
+export { default as CubeBox } from './threeJs/CubeBox';

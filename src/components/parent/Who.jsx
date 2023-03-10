@@ -1,4 +1,7 @@
-import images from '../../assets'
+import { OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { CubeBox } from '..';
+import images from '../../assets';
 
 
 const Who = () => {
@@ -9,8 +12,14 @@ const Who = () => {
       <div className='h-screen snap-center w-[1400px] flex justify-between items-center'>
 
         {/* Left Side | 3D model */}
-        <div className='flex-1'>
-          <div></div>
+        <div className='flex-1 h-[700px]'>
+          <Canvas camera={{ fov: 20, position: [5, 5, 5] }}>
+            {/* autoRotate */}
+            <OrbitControls enableZoom={true} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <CubeBox />
+          </Canvas>
         </div>
 
 

@@ -12,6 +12,12 @@
 * yarn add react-hook-form
 * yarn add prop-types
 * yarn add @emailjs/browser
+* yarn add three
+* yarn add @react-three/fiber
+* yarn add @react-three/drei
+* yarn add -g gltf-pipeline
+
+[Sketchfab](https://sketchfab.com) for 3D Models...
 
 ## Learning context:
 * No Scrollbar

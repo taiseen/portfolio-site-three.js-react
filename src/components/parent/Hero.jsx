@@ -1,5 +1,7 @@
-import images from '../../assets'
+import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber';
 import { MouseScroll, Navbar } from '..'
+import images from '../../assets'
 
 
 const Hero = () => {
@@ -29,10 +31,21 @@ const Hero = () => {
 
 
         {/* Right Side */}
-        <div className='flex-3 relative w-[600px] h-[600px]'>
-          <div></div>
+        <div className='flex-3 relative w-[700px] h-[700px]'>
+
+          <Canvas>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+
+            <Sphere args={[1, 100, 200]} scale={2.4}>
+              <MeshDistortMaterial speed={2} distort={.5} attach='material' color='#4d1c56' />
+            </Sphere>
+
+          </Canvas>
+
           <img
-            alt=""
+            alt="moon"
             src={images.moon}
             className='object-contain absolute top-0 bottom-0 left-0 right-0 m-auto animate-customAni'
           />
