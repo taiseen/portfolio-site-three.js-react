@@ -29,6 +29,8 @@
 * using of @emailjs/browser form client side to mail box
 * loading data from environment variables in vite project
 * emailJs with react-hook-form combination data sending
+* interact with threeJs Canvas & other materials objects...
+* dynamically load/render components from a list name hovering...
 
 
 ### tailwind-css 

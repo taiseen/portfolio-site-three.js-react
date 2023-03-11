@@ -1,10 +1,49 @@
-import { worksData } from '../../constants/data'
+import { worksData } from '../../constants/data';
+import { useEffect, useState } from 'react';
+
 
 const Works = () => {
+
+  // dynamically render components...
+  const [component, setComponent] = useState(null);
+
+
+  // when user click render component dynamically by its name...
+  const handleClick = async (item) => {
+    const component = await dynamicallyLoadComponent(item);
+    setComponent(component);
+  };
+
+
+  // dynamically import component by its name from its file path...
+  const dynamicallyLoadComponent = async (componentName) => {
+    const withoutSpaceComponentName = componentName.replace(" ", "");
+    const { default: Component } = await import(`../threeJs/${withoutSpaceComponentName}.jsx`);
+    return <Component />;
+  };
+
+
+  // 1st time render 1st component, by default...
+  useEffect(() => {
+    (
+      async () => {
+        const module = await import('../threeJs/WebDesign.jsx');
+        const Component = module.default;
+        setComponent(<Component />);
+      }
+    )();
+  }, []);
+
+
+  if (!component) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
     <section className='snap-center h-screen flex justify-center' id='works'>
 
-      <div className="w-[1400px] flex justify-between">
+      <div className="w-[1400px] flex justify-between items-center gap-5">
 
         {/* Left Side */}
         <div className="flex-1 flex items-center">
@@ -25,6 +64,7 @@ const Works = () => {
                   after:whitespace-nowrap
                   hover:after:animate-textHover
                   hover:after:noTextOutline `}
+                  onMouseEnter={() => handleClick(item)}
                 >
                   {item}
                 </li>
@@ -35,7 +75,11 @@ const Works = () => {
 
 
         {/* Right Side */}
-        <div className="flex-1"></div>
+        <div className="flex-1">
+          {
+            component
+          }
+        </div>
 
       </div>
 

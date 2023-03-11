@@ -8,4 +8,9 @@ export { default as FormInputs } from './children/FormInputs';
 export { default as Navbar } from './children/Navbar';
 export { default as Map } from './children/Map';
 
+export { default as ProductDesign } from './threeJs/ProductDesign';
+export { default as Illustration } from './threeJs/Illustration';
+export { default as Development } from './threeJs/Development';
+export { default as SocialMedia } from './threeJs/SocialMedia';
+export { default as WebDesign } from './threeJs/WebDesign';
 export { default as CubeBox } from './threeJs/CubeBox';
