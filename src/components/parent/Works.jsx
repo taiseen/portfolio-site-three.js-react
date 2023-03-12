@@ -18,7 +18,7 @@ const Works = () => {
   // dynamically import component by its name from its file path...
   const dynamicallyLoadComponent = async (componentName) => {
     const withoutSpaceComponentName = componentName.replace(" ", "");
-    const { default: Component } = await import(`../threeJs/${withoutSpaceComponentName}.jsx`);
+    const { default: Component } = await import(`../children/${withoutSpaceComponentName}.jsx`);
     return <Component />;
   };
 
@@ -27,7 +27,7 @@ const Works = () => {
   useEffect(() => {
     (
       async () => {
-        const module = await import('../threeJs/WebDesign.jsx');
+        const module = await import('../children/Illustration.jsx');
         const Component = module.default;
         setComponent(<Component />);
       }

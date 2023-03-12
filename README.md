@@ -15,9 +15,8 @@
 * yarn add three
 * yarn add @react-three/fiber
 * yarn add @react-three/drei
-* yarn add -g gltf-pipeline
-
-[Sketchfab](https://sketchfab.com) for 3D Models...
+* yarn add @react-three/postprocessing
+* npm install -g gltf-pipeline
 
 ## Learning context:
 * No Scrollbar
@@ -32,6 +31,24 @@
 * interact with threeJs Canvas & other materials objects...
 * dynamically load/render components from a list name hovering...
 
+
+## Converting 3D model into JSX, has some steps...
+
+* 1st download [glTF] formate data from website
+    * [Sketchfab](https://sketchfab.com) for 3D Models...
+
+### glTF Pipeline
+
+```
+gltf-pipeline -i [inputFileName].gltf -o [outputFileName].gltf -d
+```
+
+### glTF to jsx
+```
+npx gltfjsx [outputFileName].gltf --transform
+```
+
+<br />
 
 ### tailwind-css 
 ```jsx

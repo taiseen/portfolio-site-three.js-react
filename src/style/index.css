@@ -30,6 +30,10 @@
     -webkit-text-stroke: 0 white;
   }
 
+  .threeJsCanvas {
+    @apply w-[600px] h-[800px] flex justify-center items-center p-4;
+  }
+
 }
 
 @layer utilities {

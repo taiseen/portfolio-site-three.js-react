@@ -1,9 +1,9 @@
 export const worksData = [
-    "Web Design",
-    "Development",
     "Illustration",
-    "Product Design",
+    "Web Design",
     "Social Media",
+    "Development",
+    "Product Design",
 ];
 
 export const navLinks = [

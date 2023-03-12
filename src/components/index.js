@@ -8,9 +8,16 @@ export { default as FormInputs } from './children/FormInputs';
 export { default as Navbar } from './children/Navbar';
 export { default as Map } from './children/Map';
 
-export { default as ProductDesign } from './threeJs/ProductDesign';
-export { default as Illustration } from './threeJs/Illustration';
-export { default as Development } from './threeJs/Development';
-export { default as SocialMedia } from './threeJs/SocialMedia';
-export { default as WebDesign } from './threeJs/WebDesign';
+export { default as ProductDesign } from './children/ProductDesign';
+export { default as Illustration } from './children/Illustration';
+export { default as Development } from './children/Development';
+export { default as SocialMedia } from './children/SocialMedia';
+export { default as WebDesign } from './children/WebDesign';
+
 export { default as CubeBox } from './threeJs/CubeBox';
+export { default as Circle } from './threeJs/Circle';
+export { default as FbLogo } from './threeJs/FbLogo';
+export { default as Chair } from './threeJs/Chair';
+export { default as Atom } from './threeJs/Atom';
+export { default as Shoe } from './threeJs/Shoe';
+export { default as Mac } from './threeJs/Mac';
