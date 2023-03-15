@@ -7,6 +7,24 @@
 * Three.js
 * Tailwind-CSS
 
+## Dev Environment - Vite
+```
+yarn create vite
+```
+
+after clone or download, for installing dependencies, please run at terminal...
+
+```
+yarn
+```
+
+& to start the application, please run...
+
+```
+yarn dev
+```
+
+
 ## Yarn Dependencies:
 * yarn add react-simple-maps
 * yarn add react-hook-form
